@@ -4,11 +4,11 @@ Controlling motor angular position through PID controller.
 it used a PID controller, Please find the reference for PID class written from : https://github.com/EduardoNigro/Things-DAQ-Code
 
 ### List of items used:
-    1) Dc motor : 100RPM, 3-12V, 140mA.
-    2) Raspberry pi 3B+
-    3) Motor driver L298M : 5-35V, 2A
-    4) Power Supply : 12 VDC
-    5) Rotary Encoder: min 400PPR, 5-24V, 40mA
+1) Dc motor : 100RPM, 3-12V, 140mA.
+2) Raspberry pi 3B+
+3) Motor driver L298M : 5-35V, 2A
+4) Power Supply : 12 VDC
+5) Rotary Encoder: min 400PPR, 5-24V, 40mA
 
 ![setup](https://user-images.githubusercontent.com/33845372/203396730-39b56581-41cd-4ea2-a9ea-ebb113f86981.png)
 
@@ -22,3 +22,4 @@ The motor and rotary encoder are coupled together. For the PID controller, motor
 
 ![setup_raw](https://user-images.githubusercontent.com/33845372/203399062-45303972-a7c2-479f-92cf-bf778ae7c705.jpeg)
 
+The encoder A and B are used to calculate in the following in the mtr_ctrl.py program
