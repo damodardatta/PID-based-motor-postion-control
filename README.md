@@ -18,8 +18,9 @@ it used a PID controller, Please find the reference for PID class written from :
 
 ### Hardware and controller Explanation 
 
-The motor and rotary encoder are coupled together. For the PID controller, motor angle is the input and motor current is the output whereas Encoder angle feedback acts as the comparator.
+The motor and rotary encoder are coupled and housed together. For the PID controller, motor angle is the input and motor current is the output whereas Encoder angle feedback acts as the comparator.
 
-![setup_raw](https://user-images.githubusercontent.com/33845372/203399062-45303972-a7c2-479f-92cf-bf778ae7c705.jpeg)
+![setup_raw](https://user-images.githubusercontent.com/33845372/203401452-c480c8dc-db60-4d90-b4b7-5d24c56b43fe.jpeg)
+
 
 The encoder A and B are used to calculate in the following in the mtr_ctrl.py program
