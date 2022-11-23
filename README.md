@@ -4,8 +4,9 @@ Controlling motor angular position through PID controller.
 it used a PID controller, Please find the reference for PID class and motor control example code written from : https://github.com/EduardoNigro/Things-DAQ-Code
 
 For trying the code you can check inside Programs folder test.py
-  cd Programs
-  python test.py
+
+    cd Programs
+    python test.py
 
 ## List of items used:
 1) Dc motor : 100RPM, 3-12V, 140mA.
