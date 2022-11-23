@@ -1,7 +1,11 @@
 # PID-based-motor-postion-control
 Controlling motor angular position through PID controller.
 
-it used a PID controller, Please find the reference for PID class written from : https://github.com/EduardoNigro/Things-DAQ-Code
+it used a PID controller, Please find the reference for PID class and motor control example code written from : https://github.com/EduardoNigro/Things-DAQ-Code
+
+For trying the code you can check inside Programs folder test.py
+  cd Programs
+  python test.py
 
 ### List of items used:
 1) Dc motor : 100RPM, 3-12V, 140mA.
@@ -22,5 +26,12 @@ The motor and rotary encoder are coupled and housed together. For the PID contro
 
 ![setup_raw](https://user-images.githubusercontent.com/33845372/203401452-c480c8dc-db60-4d90-b4b7-5d24c56b43fe.jpeg)
 
+![Untitled Diagram drawio(2)](https://user-images.githubusercontent.com/33845372/203536631-873996b6-c4e5-491f-ab9f-4e20f51ce0dd.png)
 
-The encoder A and B are used to calculate in the following in the mtr_ctrl.py program
+ $$m_n = k_p*e_n + \frac{k_e*T}{T_{reset}}\sum_{i=0}^{n}e_i + k_d\frac{e_n - e_{n-1}}{\delta t} + m_{R}$$
+
+Enocoder 1 and 2 are used to calculate the angles in the following in the mtr_ctrl_with_logging.py program
+
+https://github.com/damodardatta/PID-based-motor-postion-control/blob/cd5bb9bed4415cf83b7bb9033c9c0a805efd7129/Programs/mtr_ctrl_with_logging.py#L60-L62
+
+
