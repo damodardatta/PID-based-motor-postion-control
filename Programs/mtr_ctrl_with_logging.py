@@ -5,11 +5,9 @@ encoder as a closed-loop position system with a PID controller.
 A step input is applied and can be used to tune the PID gains.
 https://thingsdaq.org/2022/05/15/motor-position-control-with-raspberry-pi/
 
-Run this in a terminal instead of an interactive window.
-
-Author: Eduardo Nigro
+Author: Damodar Datta Kancharla
     rev 0.0.1
-    2022-05-15
+    2022-07-15
 
 """
 # Importing modules and classes
