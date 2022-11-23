@@ -7,7 +7,7 @@ For trying the code you can check inside Programs folder test.py
   cd Programs
   python test.py
 
-### List of items used:
+## List of items used:
 1) Dc motor : 100RPM, 3-12V, 140mA.
 2) Raspberry pi 3B+
 3) Motor driver L298M : 5-35V, 2A
@@ -16,11 +16,11 @@ For trying the code you can check inside Programs folder test.py
 
 ![setup](https://user-images.githubusercontent.com/33845372/203396730-39b56581-41cd-4ea2-a9ea-ebb113f86981.png)
 
-### Circuit Diagram:
+## Circuit Diagram:
 
 ![circuit](https://user-images.githubusercontent.com/33845372/203396927-27ed0dfb-df00-4f82-9bfe-efe0f2bb7ff1.jpeg)
 
-### Hardware and controller Explanation 
+## Hardware and controller Explanation: 
 
 The motor and rotary encoder are coupled and housed together. For the PID controller, motor angle is the input and motor current is the output whereas Encoder angle feedback acts as the comparator.
 
@@ -28,7 +28,7 @@ The motor and rotary encoder are coupled and housed together. For the PID contro
 
 ![Untitled Diagram drawio(2)](https://user-images.githubusercontent.com/33845372/203536631-873996b6-c4e5-491f-ab9f-4e20f51ce0dd.png)
 
-####PID Equation
+### PID Equation:
  The output $m_n$ of a PID controller obeys the equation:
  
  $$m_n  = (k_p)*(e_n)  + \frac{(k_e)*T}{T_{reset}}\sum_{i=0}^{n}e_i  + k_d\frac{e_n - e_{n-1}}{\delta t} + m_{R} $$
@@ -38,7 +38,9 @@ The motor and rotary encoder are coupled and housed together. For the PID contro
 
 Enocoder 1 and 2, also ppr values are used to calculate the angles in the following in the mtr_ctrl_with_logging.py program
 
-####Angle = Number of Pulses / PPR (Pulses per revolution)
+### Calcuting Angle using Enocder pulses and PPR
+
+Angle = Number of Pulses / PPR (Pulses per revolution)
 
 https://github.com/damodardatta/PID-based-motor-postion-control/blob/cd5bb9bed4415cf83b7bb9033c9c0a805efd7129/Programs/mtr_ctrl_with_logging.py#L60-L62
 
