@@ -29,7 +29,7 @@ The motor and rotary encoder are coupled and housed together. For the PID contro
 ![Untitled Diagram drawio(2)](https://user-images.githubusercontent.com/33845372/203536631-873996b6-c4e5-491f-ab9f-4e20f51ce0dd.png)
 
 
- The output $m_n$ of a PID controller obeys the equation m_n = k_p*e_n + \frac{k_e*T}{T_{reset}}\sum_{i=0}^{n}e_i + k_d\frac{e_n - e_{n-1}}{\delta t} + m_{R} where $m_n$ is the output of the controller at the {\em n}th sampling instant, $m_R$ is the reference value at which the control action is initialized, $e_n$ is the value of the error at the {\em n}th sampling instant, $T_{reset}$ is the reset or integral time, $kp$ and $kd$ are the proportional and derivate gains respectively.
+ The output $m_n$ of a PID controller obeys the equation $$m_n = k_p*e_n + \frac{k_e*T}{T_{reset}}\sum_{i=0}^{n}e_i + k_d\frac{e_n - e_{n-1}}{\delta t} + m_{R}$$ where $m_n$ is the output of the controller at the {\em n}th sampling instant, $m_R$ is the reference value at which the control action is initialized, $e_n$ is the value of the error at the {\em n}th sampling instant, $T_{reset}$ is the reset or integral time, $kp$ and $kd$ are the proportional and derivate gains respectively.
 
 
 Enocoder 1 and 2, also ppr values are used to calculate the angles in the following in the mtr_ctrl_with_logging.py program
