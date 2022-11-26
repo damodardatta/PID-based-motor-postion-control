@@ -45,4 +45,10 @@ Angle = Number of Pulses / PPR (Pulses per revolution)
 
 https://github.com/damodardatta/PID-based-motor-postion-control/blob/cd5bb9bed4415cf83b7bb9033c9c0a805efd7129/Programs/mtr_ctrl_with_logging.py#L60-L62
 
+After calcluating the current and it finds difference error from current to target. using the error, PID generated motor current for reaching the target position.
+
+https://user-images.githubusercontent.com/33845372/204098840-26be7d90-8392-44a5-b7ff-988d6ca4b7f9.mp4
+
+
+
 
